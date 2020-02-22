@@ -2,21 +2,21 @@
 ___
 >**The first is the Fibonacci function:** which consists in the development of the formula:
 
-$$
+$$$
 fn = (fn-1) +  (fn-2):
-$$
-$$
+$$$
+$$$
 f0 -----------
-$$
-$$
+$$$
+$$$
 f1 -----------
-$$
-$$
+$$$
+$$$
 f2 = f1+f0 =1-----
-$$
-$$
+$$$
+$$$
 f3 = f2+f1 =2-----
-$$
+$$$
 <div align="justify"> Fibonacci by function: in which we declare n what our Fibonacci number will be, t1 it will be our temporary variable and t2 will save the result of our succession,we will make a cycle that goes from 0 to n, where we have a time variable t2 = f,f is the accumulator of t + f and t1 where this will be the result Fibonacci
 </div>
 
@@ -39,9 +39,10 @@ for(i <- Array.range(0,n+1)){
 ## Exercise 2
 ___
 >**Fibonacci Explicit formula:** first we have a number n  n = Fibonacci Succession number, a *'for'* cycle in which it reaches the sequence n, to show all the Fibonacci succession results up to n, fibonnaci will be equal to the following formula:
-$$
+
+$$$
 fn = \frac{(1+\sqrt{5})^n-(1-\sqrt{5})^n}{2^n\sqrt{5}}
-$$
+$$$
 
 ```scala
 n=20
@@ -56,9 +57,9 @@ println(fibonnaci)
 ___
 >**Recursive Fibonacci:** for this a method called `'fib'` was developed that has as a parameter n Fibonacci sequence number, the return of the function will be an integer, where **n** will only be returned when n is less than 2, if the following formula is not applied :
 
-$$
+$$$
 fn = (fn-1) + (fn-2)
-$$
+$$$
 ```scala
 def fib(n:Int):Int={
     if(n<2){
