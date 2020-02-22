@@ -40,9 +40,9 @@ for(i <- Array.range(0,n+1)){
 ___
 >**Fibonacci Explicit formula:** first we have a number n  n = Fibonacci Succession number, a *'for'* cycle in which it reaches the sequence n, to show all the Fibonacci succession results up to n, fibonnaci will be equal to the following formula:
 
-$$$
+$
 fn = \frac{(1+\sqrt{5})^n-(1-\sqrt{5})^n}{2^n\sqrt{5}}
-$$$
+$
 
 ```scala
 n=20
