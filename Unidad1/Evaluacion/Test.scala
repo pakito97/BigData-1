@@ -1,5 +1,4 @@
-def  DiagonalDifference(arr :Int ):Int={
-
+def  DiagonalDifference(arr :((Int, Int, Int), (Int, Int, Int), (Int, Int, Int))  ):Int={
 
 var diagonal_1 = (arr._1._1+arr._2._2+arr._3._3)
 var diagonal_2 = (arr._1._3+arr._2._2+arr._3._1)
