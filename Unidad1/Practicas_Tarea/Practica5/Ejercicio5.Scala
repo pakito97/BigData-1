@@ -31,3 +31,52 @@ df.show()
 
 //#9 Show the names of the DataFrame columns
 df.columns
+
+//#10 Existing columns and information about them
+df.printSchema()
+//#11 select two specific columns
+ df.select("carat","price").show()
+ //#12 condition when price is less than 350 return boolean
+ val preciosmenor = df.select($"price" < 350)
+ // save everything in which the lowest price is 330 as carat, clarity, price
+  lower price = df.filter ($ "price" <330)
+ // save everything in which the lowest price is 330 but only in price
+  lowest price = df.filter ($ "price" <330) .select ("price")
+// # 13 count how many values ​​are priced less than 330
+ lowest price = df.filter ($ "price" <330) .select ("price"). count
+ // # 14 how many have the same price
+ df.groupBy ("price"). count (). show ()
+ // # 15 Register the DataFrame as a temporary view of SQL
+ df.createOrReplaceTempView ("_ view")
+val sqlDF = spark.sql ("SELECT * FROM _view")
+sqlDF.show ()
+
+val sqlDF = spark.sql ("SELECT * FROM _view where price <330")
+sqlDF.show ()
+// # 16 show the first three elements of the DataFrame
+for (row <- df.head (3)) {
+  val list println (row)
+}
+
+for (row <- df.head (3)) {
+ val list list = row
+   println (list)
+}
+
+// # 18 add a new column
+val df2 = df.withColumn ("pricex2", df ("price") * 2)
+df2.show
+
+// # 19 Show what type of data the Dataframe has
+df.printSchema ()
+//#twenty
+///df.collect () shows only content of everything and structure / metadata.eg
+df.collect
+//df.show shows only the content
+df.show ()
+/* pdf.take (some number) can be used to display content and structure / metadata for a limited number of rows for a very large data set. Note that it flattens the data and is displayed in a single row.
+for example, to see only the first two rows of the data frame*/
+df.take (1)
+
+// 21 Show the amount of correlation that has a data
+df.select (corr ("price", "carat"). alias ("correlation")). show()
