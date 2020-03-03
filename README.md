@@ -7,5 +7,5 @@
 >> * [PRACTICE 4 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Tarea4/PearsonCorrelation.md)
 >> * [PRACTICE 5 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica5/Readme.md)
 >> * [PRACTICE 6 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica6/Readme.md)
->> * [PRACTICE 7 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica7/variance.scala)
+>> * [PRACTICE 7 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica7/Readme.md)
 
