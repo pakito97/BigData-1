@@ -1,47 +1,47 @@
 # Exercise 6
 
 
- * 1.creturns the approximate number of distinct items in a group.
+ * 1 creturns the approximate number of distinct items in a group.
 ```sacala
 df.select(approx_count_distinct("Sales")).show()
 ```
 
-* 2. returns the average of the values in a group.
+* 2 returns the average of the values in a group.
 ```scala
 df.select(avg("Sales")).show()
 ```
-* 3. returns a list of objects with duplicates.
+* 3 returns a list of objects with duplicates.
 ```scala
 df.select(collect_list("Company")).show()
 ```
 
-* 4. returns the number of items in a group.
+* 4 returns the number of items in a group.
 ```scala
 df.select(count("Sales")).show()
 ```
 
-* 5. returns the first value of a column in a group.
+* 5 returns the first value of a column in a group.
 ```scala
 df.select(first("Person")).show()
 ```
 
-* 6. returns the kurtosis of the values in a group.
+* 6 returns the kurtosis of the values in a group.
 ```scala
 df.select(kurtosis("Sales")).show()
 ```
 
-* 7. returns the last value of the column in a group.
+* 7 returns the last value of the column in a group.
 ```sacala
 df.select(last("Person")).show()
 ```
 
-* 8. returns the population standard deviation of the expression in a group.
+* 8 returns the population standard deviation of the expression in a group.
 ```scala
 
 df.select(stddev_pop("Sales")).show()
 ```
 
-* 9. returns the skewness of the values in a group.
+* 9 returns the skewness of the values in a group.
 ```scala
 df.select(skewness("Sales")).show()
 ```
@@ -91,7 +91,7 @@ df.select(round(sum("Sales"))).show()
 df.select(abs(sum("Sales"))).show()
 ```
 
-* 20. returns a set of objects with duplicate elements eliminated.
+* 20 returns a set of objects with duplicate elements eliminated.
 ```scala
 df.select(collect_set("Person")).show()
 ```
