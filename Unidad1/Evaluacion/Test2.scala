@@ -2,7 +2,7 @@
 import org.apache.spark.sql.SparkSession
 val spark = SparkSession.builder().getOrCreate()
 //2
-val df = spark.read.option("header", "true").option("inferSchema","true")csv("/home/karen/Documentos/DatosMasivosClase/BigData/Spark_DataFrame/Netflix_2011_2016.csv")
+val df = spark.read.option("header", "true").option("inferSchema","true")csv("/home/eduardo/Escritorio/semestre_9/BigData/Unidad1/Evaluacion/Netflix_2011_2016.csv")
 
 //3 
 df.columns
@@ -21,8 +21,10 @@ df.describe().show
  df2.show
 
 //8
-val a =df.select(max("Close")).filter("Date").show()
-a.show
+
+df.groupBy(dayofmonth(df("Date")).alias("Day")).max("High").sort(asc("Day")).show()
+df.groupBy(dayofweek(df("Date")).alias("Day")).max("High").sort(asc("Day")).show()
+
 //9
 /*Close en la bolsa de valores es el valor total de las acciones con la que cerro ese dia*/
 
@@ -39,9 +41,10 @@ val tiempo1= tiempo * .100
 df.select(corr("High", "Volume").alias("correlacion")).show()
 
 //11.d
-val dfmins = df.groupBy(month("Date")).max()
-dfmins.select($"Date", $"max(High)").show()
+
+
+df.groupBy(year(df("Date")).alias("Year")).max("High").sort(asc("Year")).show()
+
+//11.e
 
 df.groupBy(month(df("Date")).alias("Month")).avg("Close").sort(asc("Month")).show()
-//11.e
-df.select(avg("Close").alias("Promedio")).show()
