@@ -3,7 +3,6 @@
 > The first thing we do is import the spark libraries with LogisticRegresion
 
 ```scala
-
 import org.apache.spark.ml.classification.LogisticRegression
 import org.apache.spark.sql.SparkSession
 
