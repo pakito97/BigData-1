@@ -1,128 +1,136 @@
-# <div style="text-align: center"> Principales algoritmos de ML </div>
+# <div style="text-align: center"> Major ML algorithms </div>
 
-## <div style="text-align: center"> APRENDIZAJE SUPERVISADO</div>
+## <div style="text-align: center"> SUPERVISED LEARNING</div>
 
 
-### Árboles de decisión
+### Decision trees
 
-Un árbol de decisiones es una herramienta de apoyo a la decisión que utiliza un gráfico o un modelo similar a un árbol de decisiones y sus posibles consecuencias, incluidos los resultados de eventos fortuitos, los costos de recursos y la utilidad. Presentan una apariencia como esta:
+A decision tree is a decision support tool that uses a graph or model similar to a decision tree and its possible consequences, including the results of fortuitous events, resource costs, and profit. They have an appearance like this:
 
 ![Alt text](arbol_decision.png "Decision Tree")
 
-Se utilizan sobre todo para clasificación de información, bifurcando y modelando los posibles caminos tomados y su probabilidad de ocurrencia para mejorar su precisión. Una vez armados, los arboles de decisión ejecutan muy rápido para obtener resultados.
+They are mainly used for information classification, bifurcating and modeling the possible paths taken and their probability of occurrence to improve their precision. Once assembled, decision trees run very fast to get results.
 
-Desde el punto de vista de la toma de decisiones empresariales, un árbol de decisiones es el número mínimo de preguntas sí / no que uno tiene que hacer, para evaluar la probabilidad de tomar una decisión correcta, la mayoría del tiempo. Este método le permite abordar el problema de una manera estructurada y sistemática para llegar a una conclusión lógica.
+From a business decision-making point of view, a decision tree is the minimum number of yes / no questions that one has to ask, to assess the probability of making a correct decision, most of the time. This method allows you to approach the problem in a structured and systematic way to reach a logical conclusion.
 
-> Los Algoritmos de árbol de decisión más usados son:
+> The most used decision tree algorithms are:
 
-* Arboles de Clasificación y Regresión (CART) 
-* Decisión de Arbol condicional
-* Random Forest 
+* Classification and Regression Trees (CART)
+* Conditional Tree Decision
+* Random Forest
 
 ### Naïve Bayes Clasification
 
-Los claseificadores Naïve Bayes son una familia de simples clasificadores probabilísticos basado en la aplicación de Bayes ‘teorema con fuertes (Naïve) supuestos de independencia entre las características’. La imagen destacada es la ecuación – con P (A | B) es probabilidad posterior, P (B | A) es probabilidad, P (A) es probabilidad previa de clase, y P (B) predictor probabilidad previa.
+Naïve Bayes classifiers are a family of simple probabilistic classifiers based on the application of Bayes ‘theorem with strong (Naïve) assumptions of independence between characteristics’. The featured image is the equation - with P (A | B) being posterior probability, P (B | A) being probability, P (A) being class prior probability, and P (B) being prior probability predictor.
+
 ![Alt text](NBC.jpg "Naïve Bayes Clasification")
 
 ### Ordinary Least Squares Regression
-Si has estado en contacto con la estadística, probablemente hayas oído hablar de regresión lineal antes. Ordinary Least Squares Regression es un método para realizar la regresión lineal. Se puede pensar en la regresión lineal como la tarea de ajustar una línea recta a través de un conjunto de puntos. Hay varias estrategias posibles para hacer esto, y la estrategia de «mínimos cuadrados ordinarios» va así: puede dibujar una línea y luego, para cada uno de los puntos de datos, medir la distancia vertical entre el punto y la línea y sumarlos; La línea ajustada sería aquella en la que esta suma de distancias sea lo más pequeña posible.
+
+If you've been in contact with statistics, you've probably heard of linear regression before. Ordinary Least Squares Regression is a method of performing linear regression. Linear regression can be thought of as the task of fitting a straight line through a set of points. There are several possible strategies for doing this, and the "ordinary least squares" strategy goes like this: you can draw a line and then, for each of the data points, measure the vertical distance between the point and the line and add them together; The fitted line would be the one in which this sum of distances is as small as possible.
 
 ![Alt text](SR.png "Ordinary Least Squares Regression")
 
-Linear se refiere al tipo de modelo que está utilizando para ajustar los datos, mientras que los mínimos cuadrados se refieren al tipo de métrica de error que está minimizando.
+Linear refers to the type of model you are using to fit the data, while least squares refer to the type of error metric you are minimizing.
 
 ### Logistic Regression
-La regresión logística es una poderosa manera estadística de modelar un resultado binomial con una o más variables explicativas. Mide la relación entre la variable dependiente categórica y una o más variables independientes estimando las probabilidades utilizando una función logística, que es la distribución logística acumulativa.
+
+Logistic regression is a powerful statistical way to model a binomial result with one or more explanatory variables. Measure the relationship between the categorical dependent variable and one or more independent variables by estimating the probabilities using a logistic function, which is the cumulative logistic distribution.
 
 ![Alt text](LR.png " Logistic Regression")
 
 ### Support Vector Machines
-SVM es un algoritmo de clasificación binario. Dado un conjunto de puntos de 2 tipos en el lugar N dimensional, SVM genera un hiperlano (N – 1) dimensional para separar esos puntos en 2 grupos. Digamos que usted tiene algunos puntos de 2 tipos en un papel que son linealmente separables. SVM encontrará una línea recta que separa esos puntos en 2 tipos y situados lo más lejos posible de todos esos puntos.
+
+SVM is a binary classification algorithm. Given a set of points of 2 types at the N-dimensional location, SVM generates a dimensional (N-1) hyperlane to separate those points into 2 groups. Let's say you have some points of 2 types on a piece of paper that are linearly separable. SVM will find a straight line that separates those points into 2 types and located as far as possible from all those points.
 
 ![Alt text](LSVM.png "Support Vector Machines")
 
-En términos de escala, algunos de los mayores problemas que se han resuelto utilizando SVMs (con implementaciones adecuadamente modificadas) son publicidad en pantalla, reconocimiento de sitios de empalme humanos, detección de género basada en imágenes, clasificación de imágenes a gran escala.
+In terms of scale, some of the biggest problems that have been solved using SVMs (with suitably modified implementations) are on-screen advertising, human splice site recognition, image-based gender detection, large-scale image classification.
 
-### Métodos Ensemble
-Los métodos Ensemble son algoritmos de aprendizaje que construyen un conjunto de clasificadores y luego clasifican nuevos puntos de datos tomando un voto ponderado de sus predicciones. El método de conjunto original es Bayesian promediando, pero los algoritmos más recientes incluyen error de corrección de salida de codificación.
+### Ensemble Methods
+
+Ensemble methods are learning algorithms that build a set of classifiers and then classify new data points by taking a weighted vote of their predictions. The original set method is Bayesian averaging, but the latest algorithms include encoding output correction error.
 
 ![Alt text](ensemble.png "ENSEMBLE METHODS")
 
 ## <div style="text-align: center"> UNSUPERVISED LEARNING</div>
 
-### Algoritmos Clustering
-El Clustering (o algoritmo de agrupamiento) consiste en agrupar una serie
-de vectores seg´un un criterio en grupos o clusters. Generalmente el criterio
-suele ser la similitud por lo que diremos que agrupa los vectores similares en
-grupos. Esta considerado como un aprendizaje no supervisado dentro de
-la minerıa de datos.
+### Clustering algorithms
+
+Clustering (or grouping algorithm) consists of grouping a series
+of vectors according to a criterion in groups or clusters. Generally the criterion
+it is usually the similarity so we will say that it groups the similar vectors in
+groups. It is considered unsupervised learning within
+Data mining.
 
  ![Alt text](Clusters-obtenidos-con-algoritmo-K-Means.png "ENSEMBLE METHODS")
 
  #### K-means
 
-Este algoritmo particiona los N objetos en K particiones (K siendo un valor
-arbitrario) en donde un objeto ir´a al cluster con la media m´as cercana. El
-algoritmo asigna K centros aleatoriamente, luego asigna los objetos al centro
-mas cercano. El centro se recalcula como la media de los puntos que tiene
-asignado, una vez actualizado se vuelven a reasignar los objetos al mas cercano y ası hasta tener convergencia.
-Este algoritmo es NP-Hard. Depende mucho de la asignaci´on inicial de
-los centros, nos puede dar un resultado u otro por lo que es mejor hacer varias
-pruebas con diferentes valores. 
+This algorithm partitions the N objects in K partitions (K being a value
+arbitrary) where an object will go to the cluster with the closest mean. The
+algorithm assigns K centers randomly, then assigns objects to center
+closest. The center is recalculated as the average of the points it has
+assigned, once updated, the objects are reassigned to the closest one and thus until convergence.
+This algorithm is NP-Hard. Much depends on the initial allocation of
+the centers, can give us one result or another so it is better to do several
+tests with different values. 
 
 ![Alt text](kmeans.png "K-means")
 
 #### K-nearest neighbors
 
-En este algoritmo se decide la membresia de un objeto teniendo en cuenta sus
-vecinos. Se decide a que cluster pertenece mirando a que cluster pertenece
-la mayor´ıa de sus vecinos K mas cercanos a el. Se trata de unos de los algoritmos mas simples de aprendizaje automatico.
+In this algorithm the membership of an object is decided taking into account its
+neighbors. Decide which cluster it belongs to by looking at which cluster it belongs to
+most of his neighbors K closest to him. It is one of the simplest machine learning algorithms.
 
 ![Alt text](KNN.png "K-nearest neighbors")
 
 #### DBSCAN
 
-El DBSCAN es un algoritmo que se basa en la densidad para realizar la
-clasificacion. Hay que fijar un radio E en el cual queremos encontrar puntos
-y un numero mınimo de puntos P que se ha de encontrar dentro del radio.
+DBSCAN is a density-based algorithm for performing the
+classification. You have to set a radius E in which we want to find points
+and a minimum number of points P to be found within the radius.
 
-1. Partimos de un punto aleatorio y miramos si desde ese punto hay un
-mınimo de puntos P en un radio de distancia E.
-2. Si es ası, esto forma un cluster y volvemos a la etapa 1 con un punto
-de los encontrados.
-3. Si no encontramos el mınimo de puntos pero hemos llegado a ese punto
-a traves de un punto que si lo cumplıa, este formara parte del cluster.
-En caso de no poder llegar a un punto a trav´es de otros no formar´a
-parte del cluster y ser´a un nodo ruidoso.
+1. We start from a random point and see if there is a
+minimum of points P in a radius of distance E.
+2. If so, this forms a cluster and we return to stage 1 with a point
+of those found.
+3. If we don't find the minimum number of points but we have reached that point
+through a point that if it did, it would be part of the cluster.
+In case of not being able to reach a point through others, it will not form
+part of the cluster and it would be a noisy node.
 
-Este algoritmo no hay que fijar el numero de clusters y tiene una complejidad
-de O(n log n).
+This algorithm does not have to fix the number of clusters and has a complexity
+of O (n log n).
 
 ![Alt text](DBSCAN.png "DBSCAN")
 
-### Análisis de Componentes Principales
+### Principal component analysis
 
-PCA es un procedimiento estadístico que usa una transformación ortogonal para convertir un conjunto de observaciones de variables posiblemente correlacionadas en un conjunto de valores de variables linealmente no correlacionadas llamadas componentes principales.
+PCA is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of linearly uncorrelated variable values ​​called principal components.
 
 ![Alt text](PCA.png "PCA")
 
-Analisis de componentes principales
+Principal component analysis
 
-Algunas de las aplicaciones de PCA incluyen compresión, simplificación de datos para un aprendizaje más fácil, visualización. Tenga en cuenta que el conocimiento del dominio es muy importante al elegir si seguir adelante con PCA o no. No es adecuado en los casos en que los datos son ruidosos (todos los componentes de PCA tienen una variación bastante alta).
+Some of the PCA applications include compression, data simplification for easier learning, visualization. Keep in mind that domain knowledge is very important when choosing whether to go ahead with PCA or not. It is not suitable in cases where the data is noisy (all PCA components have a fairly high variation).
 
  
 ### Singular Value Decomposition
-En el álgebra lineal, SVD es una factorización de una matriz compleja real. Para una matriz M * n dada, existe una descomposición tal que M = UΣV, donde U y V son matrices unitarias y Σ es una matriz diagonal.
+
+In linear algebra, SVD is a factorization of a real complex matrix. For a given M * n matrix, there is a decomposition such that M = UΣV, where U and V are unit matrices and Σ is a diagonal matrix.
 
 ![Alt text](SVD.png "SVD")
 
-### Análisis de Componentes Independientes
-ICA es una técnica estadística para revelar los factores ocultos que subyacen a conjuntos de variables, mediciones o señales aleatorias. ICA define un modelo generativo para los datos multivariados observados, que se suele dar como una gran base de datos de muestras. En el modelo, se supone que las variables de datos son mezclas lineales de algunas variables latentes desconocidas, y el sistema de mezcla también es desconocido. Las variables latentes se asumen no gaussianas y mutuamente independientes, y se les llama componentes independientes de los datos observados.
+### Independent Component Analysis
+
+ICA is a statistical technique for revealing hidden factors underlying sets of variables, measurements, or random signals. ICA defines a generative model for the observed multivariate data, which is often given as a large sample database. In the model, the data variables are assumed to be linear mixtures of some unknown latent variables, and the mixing system is also unknown. Latent variables are assumed to be non-Gaussian and mutually independent, and are called independent components of the observed data.
 
 ![Alt text](ICA.png "ICA")
 
-ICA está relacionado con PCA, pero es una técnica mucho más poderosa que es capaz de encontrar los factores subyacentes de fuentes cuando estos métodos clásicos fallan por completo. Sus aplicaciones incluyen imágenes digitales, bases de datos de documentos, indicadores económicos y mediciones psicométricas.
 
+ICA is related to PCA, but it is a much more powerful technique that is able to find the underlying factors of sources when these classic methods fail completely. Its applications include digital images, document databases, economic indicators and psychometric measurements.
 
 https://www.raona.com/los-10-algoritmos-esenciales-machine-learning/
 
