@@ -79,5 +79,5 @@ val rfModel = model.stages(2).asInstanceOf[RandomForestClassificationModel]
 println(s"Learned classification forest model:\n ${rfModel.toDebugString}")
 ```
 
-![Alt text](prediccionesGradientBoostredTree.png "RandomForestClassifierExample")
-![Alt text](ResultadoGradientBoostedTree.png "RandomForestClassifierExample")
+![Alt text](RandomForestClassifer.png "RandomForestClassifierExample")
+![Alt text](RamdomForestModel.png "RandomForestClassifierExample")

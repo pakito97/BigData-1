@@ -43,7 +43,7 @@ Logger.getLogger("org").setLevel(Level.ERROR)
 
 val spark = SparkSession.builder().getOrCreate()
 
-val data  = spark.read.option("header","true").option("inferSchema", "true").format("csv").load("/home/eduardo/Escritorio/semestre_9/BigData/Unidad2/Practicas_Tareas/Practica2/advertising.csv")
+val data  = spark.read.option("header","true").option("inferSchema", "true").format("csv").load("/usr/local/spark-2.3.4-bin-hadoop2.6/data/mllib/advertising.csv")
 
 data.printSchema()
 
