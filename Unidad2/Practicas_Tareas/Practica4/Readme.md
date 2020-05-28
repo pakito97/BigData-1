@@ -1,4 +1,4 @@
-# Random Forest
+### :memo: PRACTICE 4: Random forest classifier 
 
 > We import libraries
 ```scala
@@ -78,3 +78,6 @@ println(s"Test Error = ${(1.0 - accuracy)}")
 val rfModel = model.stages(2).asInstanceOf[RandomForestClassificationModel]
 println(s"Learned classification forest model:\n ${rfModel.toDebugString}")
 ```
+
+![Alt text](prediccionesGradientBoostredTree.png "RandomForestClassifierExample")
+![Alt text](ResultadoGradientBoostedTree.png "RandomForestClassifierExample")

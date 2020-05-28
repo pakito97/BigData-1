@@ -1,4 +1,4 @@
-# SVC
+### :memo: PRACTICE 7: Linear Support Vector Machine 
 
 > We import libraries
 ```scala

@@ -1,4 +1,4 @@
-# Decisiontree
+### :memo: PRACTICE 3: Decision tree classifier 
 
 > import of libraries
 
@@ -88,7 +88,7 @@ val treeModel = model.stages(2).asInstanceOf[DecisionTreeClassificationModel]
     println(s"Learned classification tree model:\n ${treeModel.toDebugString}")
 ```
 
-
+![Alt text](DecisionTreeClassification.png "Decision tree classifier")
 
 
 
