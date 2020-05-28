@@ -1,4 +1,4 @@
-### :memo: PRÁCTICA 6: Linear Support Vector Machine
+### :memo: PRACTICE 6: Multilayer perceptron classifier
 
 > Step 1: loading required packages and APIs
 ```scala
@@ -77,4 +77,4 @@ if the classifier performance is low enough. One reason is that the Perceptron i
 }
 
 
-![Alt text](MPC.png "Decision Tree")
+![Alt text](MPC.png "Multilayer perceptron classifier")
