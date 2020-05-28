@@ -23,3 +23,4 @@ import org.apache.spark.sql.SparkSession
     // Imprimimos los coeficientes del vector y su intercepcion
     println(s"Coefficients: ${lsvcModel.coefficients} Intercept: ${lsvcModel.intercept}")
     
+    
