@@ -1,4 +1,4 @@
-# Practice 2
+### :memo: PRACTICE 2: Logistic Regression
 
 > The first thing we do is import the spark libraries with LogisticRegresion
 
@@ -125,3 +125,9 @@ println(metrics.confusionMatrix)
 
 metrics.accuracy
 ```
+
+![Alt text](P2_1.png "PracticaLogisticRegression")
+![Alt text](P2_2.png "PracticaLogisticRegression")
+![Alt text](P2_3.png "PracticaLogisticRegression")
+![Alt text](P2_4.png "PracticaLogisticRegression")
+![Alt text](P2_5.png "PracticaLogisticRegression")

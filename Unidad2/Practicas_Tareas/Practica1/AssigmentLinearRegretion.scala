@@ -16,7 +16,7 @@ import org.apache.spark.sql.SparkSession
 val spark = SparkSession.builder().getOrCreate()
 // Utilice Spark para el archivo csv Clean-Ecommerce .
 
-val data = spark.read.option("header", "true").option("inferSchema","true")csv("/home/eduardo/Escritorio/semestre_9/BigData/Unidad2/Practica1/Clean-Ecommerce.csv")
+val data = spark.read.option("header", "true").option("inferSchema","true")csv("/usr/local/spark-2.3.4-bin-hadoop2.6/data/mllib/Clean-Ecommerce.csv")
 //val df = spark.read.option("header", "true").option("inferSchema","true")csv("Clean-Ecommerce.csv")
 // Imprima el schema en el DataFrame.
 
@@ -59,24 +59,3 @@ val assembler = new VectorAssembler().setInputCols(Array("Avg Area Income", "Avg
 // Llamar a esto nuevo assambler.
 // Utilice el assembler para transform nuestro DataFrame a dos columnas: label and features
 val assembler = new VectorAssembler().setInputCol(Array("Avg Area Income", "Avg Area House Age", "Avg Area Number of Rooms", "Avg Area Number of Bedrooms", "Area Population")).setOutputCol("features")
-
-// Crear un objeto para modelo de regresion linea.
-val lr = new LinearRegression().setMaxIter(10).setRegParam(0.3).setElasticNetParam(0.8)
-
-// Ajuste el modelo para los datos y llame a este modelo lrModelo
-val lrModel = lr.fit(data)
-
-
-// Imprima the  coefficients y intercept para la regresion lineal
-println(s"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}")
-
-// Resuma el modelo sobre el conjunto de entrenamiento imprima la salida de algunas metricas!
-// Utilize metodo .summary de nuestro  modelo para crear un objeto
-// llamado trainingSummary
-val trainingSummary = lrModel.summary
-println(s"numIterations: ${trainingSummary.totalIterations}")
-println(s"objectiveHistory: [${trainingSummary.objectiveHistory.mkString(",")}]")
-trainingSummary.residuals.show()
-// Muestre los valores de residuals, el RMSE, el MSE, y tambien el R^2 .
-println(s"RMSE: ${trainingSummary.rootMeanSquaredError}")
-println(s"r2: ${trainingSummary.r2}")
