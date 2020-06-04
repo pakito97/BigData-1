@@ -1,4 +1,4 @@
-BigData`> Unit2-Programming-with-R`
+BigData`> Unit2-Programming-Spark-and-Scala`
 
 ## Unit 2: Programming-with-Spark
 
