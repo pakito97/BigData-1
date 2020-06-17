@@ -1,3 +1,14 @@
+# BigData
+
+>## UNIT 1
+>> * [PRACTICE 1 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica1/Readme.md)
+>> * [PRACTICE 2 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica2/Readme.md)
+>> * [PRACTICE 3 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica3/Readme.md)
+>> * [PRACTICE 4 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Tarea4/PearsonCorrelation.md)
+>> * [PRACTICE 5 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica5/Readme.md)
+>> * [PRACTICE 6 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica6/Readme.md)
+>> * [PRACTICE 7 ](https://github.com/Eduardoitt/BigData/blob/Unidad1/Unidad1/Practicas_Tarea/Practica7/Readme.md)
+
 BigData`> Unit2-Programming-Spark-and-Scala`
 
 ## Unit 2: Programming-with-Spark
@@ -29,3 +40,7 @@ analysis methods
 - [HOMEWORK 3](https://github.com/Eduardoitt/BigData/tree/Unidad2/Unidad2/Practicas_Tareas/Tarea3)
 
 - [Test](./Unidad2/Evaluacion/) 
+
+
+
+
