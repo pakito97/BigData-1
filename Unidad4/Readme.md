@@ -1,79 +1,134 @@
-# Final Project
+<table>
+ <td style="font-size:50% ;font-family: Times New Roman"; align="center" colspan="2">
+   <h2>BigData Final Project</h2>
+Departamento de sistemas y computación
+<br>
+Instituto Tecnológico de Tijuana
+<br>
+karen.morales16@tectijuana.edu.mx
+<br>
+jesus.escobedo16@tectijuana.edu.mx
+ </td>
+</tr>                                                                                 
+ <tr>
+    <td style="font-size:150% ;font-family: Times New Roman"; align="Justify">
+ I. INTRODUCTION
+<br>
+<br>
+This investigation aims to compare the performance of the following SVM machine learning algorithms, Decision Three, Logistic Regression, Multilayer Perceptron, using a csv called bank of approximately 45,000 records
+<br>
+<br>
+II. Algorithms
+<br>
+<br>
+A. Multilayer Perceptron Classifier
+<br>
+<br>
+Consists of multiple layers of nodes including the input layer, hidden layers (also called intermediate layers), and output layers. Each layer is fully connected to the next layer in the network.
+<br>
+<br>
+B. Decision Tree
+<br>
+<br>
+A Decision tree is a flowchart like tree structure, where each internal node denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (terminal node) holds a class label.
+<br>
+<br>
+C. Lineal Support Vector Machine
+<br>
+<br>
+“Support Vector Machine” (SVM) is a supervised machine learning algorithm which can be used for both classification or regression challenges. However, it is mostly used in classification problems.
+<br>
+<br>
+D. Logistic Regression
+<br>
+Logistic regression is the appropriate regression analysis to conduct when the dependent variable is dichotomous (binary). Like all regression analyses, the logistic regression is a predictive analysis
+<br>
+<br>
+<br> 
+<br>
+  </td>
+    <td  style="font-size:150% ;font-family: Times New Roman"; align="Justify">
+III. Implementation of technological tools
+<br>
+<br>
+ A. Spark 
+<br>
+<br>
+Spark enables parallelized jobs entirely in memory, greatly reducing processing times. Especially if it is an iterative process as used in Machine Learning.
+<br>
+<br>
+B. Scala
+<br>
+<br>
+We use Sacalabecause it is a functional and object-oriented language to demos that runs at compilation time, it allows us not to consume a lot of system memory, this helps us to get good execution time, and it allows us to work with large volumes of data.
+<br>
+<br>
+Performance
+<br>
+<br>
+<table class="egt" border="0">
+<tr>
+  <td> </td>
+    <td> Used memory MB</td>
+    <td>Seconds</td>
+  </tr>
+  <tr>
+    <td>SVC</td>
+    <td>464.87</td>
+    <td>15.5</td>
+  </tr>
+    <tr>
+    <td>Logistic Regression</td>
+    <td>418.77</td>
+    <td>7.1</td>
+  </tr>
+    <tr>
+    <td>Decision Three</td>
+    <td>373.89</td>
+    <td>11.9</td>
+  </tr>
+   <tr>
+    <td>Multilayer perceptron</td>
+    <td>598.21</td>
+    <td>22.3</td>
+  </tr>
+</table>
+  <br>
+<br>
+Accuracy
+<br>
+<br>
+<table class="egt" border="0">
+<tr>
+  <td> </td>
+    <td>Accuracy</td>
+    <td>Error</td>
+  </tr>
+  <tr>
+    <td>SVC</td>
+    <td>0.885</td>
+    <td>0.114</td>
+  </tr>
+    <tr>
+    <td>Logistic Regression</td>
+    <td>0.884</td>
+    <td>0.115</td>
+  </tr>
+    <tr>
+    <td>Decision Three</td>
+    <td>0.891</td>
+    <td>0.108</td>
+  </tr>
+   <tr>
+    <td>Multilayer perceptron</td>
+    <td>0.882</td>
+    <td>0.117</td>
+  </tr>
+</table>
 
-## I. INTRODUCTION
-Machine Learning (ML) automates the construction of
-data analysis models, bases its development on systems that
-learn from data, identify patterns and make decisions.
-
-### Multilayer Perceptron Classifier
-Consists of multiple layers of nodes including the
-input layer, hidden layers (also called intermediate layers),
-and output layers. Each layer is fully connected to the next
-layer in the network.
-The input layer consists of neurons that accept the input
-values. The output from these neurons is same as the input
-predictors. Nodes in the input layer represent the input data.
-All other nodes map inputs to outputs by a linear
-combination of the inputs with the node’s weights w and
-bias b and applying an activation function. This can be
-written in matrix form for MLPC with K+1.
-
-
-### Decision Tree
-Decision tree is the most powerful and popular tool for
-classification and prediction. A Decision tree is a flowchart
-like tree structure, where each internal node denotes a test on
-an attribute, each branch represents an outcome of the test,
-and each leaf node (terminal node) holds a class label.
-
-
-### Lineal Support Vector Machine
-“Support Vector Machine” (SVM) is a supervised
-machine learning algorithm which can be used for both
-classification or regression challenges. However, it is
-mostly used in classification problems. In the SVM
-algorithm, we plot each data item as a point in
-n-dimensional space (where n is number of features you
-have) with the value of each feature being the value of a
-particular coordinate. Then, we perform classification by
-finding the hyper-plane that differentiates the two classes
-very well (look at the below snapshot).
-
-### Logistic Regression
-Logistic regression is the appropriate regression analysis to
-conduct when the dependent variable is dichotomous
-(binary). Like all regression analyses, the logistic regression
-is a predictive analysis. Logistic regression is used to
-describe data and to explain the relationship between one
-dependent binary variable and one or more nominal, ordinal,
-interval or ratio-level independent variables.
-
-**Performance**
-
-|                   |Used memory MB|Seconds|
-|-------------------|--------------|-------|
-| SVC               |464.87        |15.5   |
-|Logistic Regression| 418.77       |7.1    |
-|Decision Three     |373.89        | 11.9  |
-|Multilayer perceptron| 598.21     |22.3   |
-
-**Accuracy**
-| |Accuracy|Error|
-|---|---|---|
-|SVC| 0.885| 0.114|
-|Logistic Regression| 0.884| 0.115|
-|Decision Three| 0.891| 0.108|
-|Multilayer perceptron| 0.882 |0.117|
-
-### CONCLUSIONS
-After looking at the results of the different types of
-classification algorithms with the banck-full dataset, we can
-see that on average decision trees was the one that best
-classified this dataset consuming less memory than the
-other algorithms with an average time of 11.9 seconds. and
-an accuracy of 89.1%. The second best algorithm that we
-looked at was SVC, even though it uses a little more
-memory, we get an effectiveness a little under decision
-trees with 88.5% accuracy and with an average time of 15.5
-seconds, taking into account that SVC could improve its
-results or make them worse using different kernels.
+V. CONCLUSIONS
+After looking at the results of the different types of classification algorithms with the banck-full dataset, we can see that on average decision trees was the one that best classified this dataset consuming less memory than the other algorithms with an average time of 11.9 seconds. 
+ </td>
+ </tr>
+ </tr>
+</table>
