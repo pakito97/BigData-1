@@ -50,12 +50,12 @@ interval or ratio-level independent variables.
 
 **Performance**
 
-| |Used memory MB|Seconds|
-|---|---|----|-------|
-|SVC |464.87 |15.5|
-|Logistic Regression| 418.77 |7.1|
-|Decision Three |373.89 | 11.9|
-|Multilayer perceptron| 598.21 |22.3|
+|                   |Used memory MB|Seconds|
+|-------------------|--------------|-------|
+| SVC               |464.87        |15.5   |
+|Logistic Regression| 418.77       |7.1    |
+|Decision Three     |373.89        | 11.9  |
+|Multilayer perceptron| 598.21     |22.3   |
 
 **Accuracy**
 | |Accuracy|Error|
