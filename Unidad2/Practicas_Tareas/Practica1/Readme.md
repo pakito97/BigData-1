@@ -63,7 +63,8 @@ val assembler = new VectorAssembler().setInputCols(Array("Avg Area Income", "Avg
  Call this a new assambler.
  Use the assembler to transform our DataFrame to two columns: label and features
 ```scala
-val assembler = new VectorAssembler().setInputCol(Array("Avg Area Income", "Avg Area House Age", "Avg Area Number of Rooms", "Avg Area Number of Bedrooms", "Area Population")).setOutputCol("features")
+val assembler = new VectorAssembler().setInputCol(Array("Avg Area Income", "Avg Area House Age", "Avg Area Number of Rooms", "Avg Area Number of Bedrooms", "Area 
+Population")).setOutputCol("features")
 ```
 
 ![Alt text](P1_1.png "PracticaLogisticRegression")
